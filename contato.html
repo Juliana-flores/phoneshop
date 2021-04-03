@@ -11,12 +11,11 @@
     <title>Phoneshop</title>
 	
 	<link rel="shortcut icon" href="img/icon-fone.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/contato.css">
 	
 	<script src="https://use.fontawesome.com/5b286af670.js"></script>
 </head>
-
-<body>    
+<body>
     <header class="cabecalho">
         <div class="menu">
             <div class="logo">
@@ -40,46 +39,49 @@
                 Login
             </h1>
             <div class="card">
-                <div class="foto">
-                    <img src="img/login.png" alt="">
+                <div class="inserir">
+                    <label>
+                        <p>Nome</p>
+                    </label>
+                    <input type="text" name="text" placeholder="Digite seu nome" required>
                 </div>
                 <div class="inserir">
                     <label>
-                        Email
+                        <p>Email</p> 
                     </label>
-                    <input type="email" name="email" placeholder="Digite seu email" required>
+                    <input type="email" name="text" placeholder="Digite seu email" required>
                 </div>
                 <div class="inserir">
                     <label>
-                        Senha
+                        <p>Telefone</p>
                     </label>
-                    <input type="password" name="email" placeholder="Digite sua senha" required>
+                    <input type="text" name="text" placeholder="Digite seu telefone">
                 </div>
                 <div class="inserir">
                     <label>
-                        <input type="checkbox"/> Lembre-me
+                        <p>Mensagem</p>
                     </label>
+                    <textarea name="mensagem"  cols="44" rows="5" placeholder="Deixe sua mensagem" required></textarea>
+                </div>
+                
                 </div>
                 <div class="inserir">
-                     <button type="submit">Acessar conta</button>
+                     <button type="submit">Enviar</button>
                 </div>
             </div>         
         </form>
     </section>
 
-	<footer>
-        <div class="footer">
-            <div class="social-icons">
-                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
-                <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-            </div>
-            <p class="copyright">
-                Copyright Phoneshop(c) 2021 Todos os direitos reservados.</br>
-                <a href="#">Para mais informações, clique aqui.</a>
-            </p>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
         </div>
+        <p class="copyright">
+            Copyright Phoneshop(c) 2021 Todos os direitos reservados.</br>
+			<a href="#">Para mais informações, clique aqui.</a>
+        </p>
     </footer>
-
+    <script src="contato.js"></script>
 </body>
-</html>
