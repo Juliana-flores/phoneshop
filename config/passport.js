@@ -20,9 +20,13 @@ const callback = (request, email, password, done) => {
     if (user) {
       return done(null, false, { message: 'E-mail já está sendo utilizado.' })
     }
+
     const newUser = new User()
+
     newUser.email = email
     newUser.password = newUser.encryptPassword(password)
+    newUser.name = request.body.name
+
     newUser.save((error, result) => {
       if (error) {
         done(error)

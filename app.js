@@ -9,8 +9,10 @@ require('./data/database').getInstance()
 require('./config/passport')
 
 const express = require('express')
+
 const session = require('express-session')
 const cookie = require('cookie-parser')
+
 const passport = require('passport')
 const flash = require('connect-flash')
 
