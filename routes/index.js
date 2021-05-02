@@ -3,7 +3,7 @@ const router = express.Router()
 const products = require('../data/products.json')
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/', (req, res, next) => {
   res.marko(require('../views/index.marko'), {
     products
   })
