@@ -1,0 +1,110 @@
+[
+    {
+       "name":"JBL Club 950NC",
+       "description":"Com os fones JBL CLUB 950NC, o palco vem até você. O legendário som JBL Pro Sound e o áudio Hi-Res realçam todos os detalhes e proporcionam o máximo de clareza, criando uma excelente experiência acústica.",
+       "price": {
+         "value": "R$ 1.499,00", 
+         "desc": "Até 6x de R$ 250,00"
+      },
+       "image":"/public/images/prod1.webp"
+    },
+    {
+       "name":"JBL tune 215BT",
+       "description":"Ouça suas músicas e receba chamadas durante 16 horas. Recarregue totalmente em 2 horas ou tenha 1 hora de uso extra com uma recarga de apenas 10 minutos.",
+       "price": {
+         "value": "R$ 229,00", 
+         "desc": "30% de desconto na compra à vista"
+      },
+       "image":"/public/images/prod2.webp"
+    },
+    {
+       "name":"JBL Tune 120TWS",
+       "description":"O driver de 5,8 mm com o som JBL Pure Bass oferece um impacto potente para todas as suas playlists.",
+       "price": {
+         "value": "R$ 559,00", 
+         "desc": "Frete grátis para todo Brasil"
+      },
+       "image":"/public/images/prod3.webp"
+    },
+    {
+       "name":"JBL Quantunum ONE",
+       "description":"A calibragem personalizada do algoritmo da JBL, com o sensor de rastreamento de cabeça e o microfone, é feita exclusivamente para o JBL Quantum ONE, proporcionando aos jogadores um posicionamento de áudio preciso e de última geração.",
+       "price": {
+         "value": "R$ 1.999,00", 
+         "desc": "Em alta em todo Brasil"
+      },
+       "image":"/public/images/prod4.webp"
+    },
+    {
+       "name":"JBL Endurance DIVE",
+       "description":"Graças a 1GB de memória integrado, você pode armazenar e acessar facilmente mais de 200 faixas de música diretamente no fone de ouvido.",
+       "price": {
+         "value": "R$ 549,00", 
+         "desc": "Até 6x de R$ 91,50"
+      },
+       "image":"/public/images/prod5.webp"
+    },
+    {
+       "name":"Charging Case",
+       "description":"Feito para aparelhos intra-auriculares, que têm design menor, o acessório é um estojo para guardar o equipamento em segurança, além de recarregar sempre que for necessário e com capacidade para até 16 horas de bateria.",
+       "price": {
+         "value": "R$ 90,00", 
+         "desc": "20% de desconto em outro produto da sua escolha"
+      },
+       "image":"/public/images/prod6.webp"
+    },
+    {
+       "name":"JBL LIVE 650BTNC",
+       "description":"Em seu mundo, a música é essencial, portanto, coloque um par de fones de ouvido auriculares sem fio com cancelamento de ruído JBL LIVE650BTNC e melhore o seu dia. Equipados com potentes drivers de 40 mm.",
+       "price": {
+         "value": "R$ 599,00", 
+         "desc": "Perfeito para você"
+      },
+       "image":"/public/images/prod7.webp"
+    },
+    {
+       "name":"JBL Tune 220TWS",
+       "description":"Ganhe mais liberdade com fones que vão com você aonde você quiser. Mantenha-se conectado sem fios. Os fones JBL TUNE 220TWS possuem a tecnologia true wireless, que mantém você sempre conectado, e funcionam com dispositivos Android ou iPhone.",
+       "price": {
+         "value": "R$ 499,00", 
+         "desc": "Até 6x de R$83,17 no cartão de crédito"
+      },
+       "image":"/public/images/prod8.webp"
+    },
+    {
+       "name":"JBL Endurance PEAK",
+       "description":"Liberte-se de todas as limitações e prepare-se para atingir um nível inédito de desempenho com os fones de ouvido JBL Endurance PEAK. Aproveite a liberdade de malhar sem fio e sem precisar recarregar os fones de ouvido por até 28 horas.",
+       "price": {
+         "value": "R$ 799,00", 
+         "desc": "O melhor custo-beneficio da Phoneshop"
+      },
+       "image":"/public/images/prod9.webp"
+    },
+    {
+       "name":"JBL TUNE 215BT",
+       "description":"Apresentamos os fones de ouvido intra-auriculares sem fio JBL TUNE 215BT, com som JBL Pure Bass. Graças à bateria com duração de 16 horas, eles podem transmitir som JBL Pure Bass de alta qualidade e oferecer controle de chamadas em viva-voz, sem fio.",
+       "price": {
+          "value": "R$ 250,00", 
+          "desc": "50% de desconto em um fone esportivo"
+       },
+       "image":"/public/images/prod10.webp"
+    },
+    {
+       "name":"JBL Jr310BT",
+       "description":"Seguros, leves e do tamanho perfeito para crianças, os fones de ouvido JBL JR310BT sem fios oferecem até 30 horas de áudio lendário e toda a diversão da JBL para os admiradores mais jovens de música.",
+       "price": {
+          "value": "R$ 289,00",
+          "desc": "O fone feito para crianças"
+       },
+       "image":"/public/images/prod11.webp"
+    },
+    {
+       "name":"JBL Quantum 400",
+       "description":"Obtenha vantagem de áudio. O fone de ouvido JBL Quantum 400 coloca você um passo à frente com o som surround que te envolve no jogo e permite prever cada movimento. Projetado para precisão e imersão, o JBL QuantumSOUND Signature ajuda você a aprimorar seu desempenho para uma vantagem real durante o combate.",
+       "price": {
+         "value": "R$ 699,00",
+         "desc":  "R$ 629,10 no boleto"
+       },
+       "image":"/public/images/prod12.webp"
+    }
+]

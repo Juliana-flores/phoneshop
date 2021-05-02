@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <include ('./includes/head.marko')> </include>
+    <link rel="stylesheet" href="/public/stylesheets/login.css">	
+</head>
+
+
+<body>    
+    <include ('./includes/header.marko')> </include>
+
+    <section class='login-style'>
+        <form action="" class="formulario">
+            <h1>
+                Login
+            </h1>
+            <div class="card">
+                <div class="foto">
+                    <img src="/public/images/login.png" alt="">
+                </div>
+                <div class="inserir">
+                    <label>
+                        Email
+                    </label>
+                    <input type="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="inserir">
+                    <label>
+                        Senha
+                    </label>
+                    <input type="password" name="email" placeholder="Digite sua senha" required>
+                </div>
+                <div class="inserir">
+                    <label>
+                        <input type="checkbox"/> Lembre-me
+                    </label>
+                </div>
+                <div class="inserir">
+                    <p><a href="/cadastro">Fazer Cadastro</a></p>
+                </div>
+                <div class="inserir">
+                     <button type="submit">Acessar conta</button>
+                </div>
+            </div>         
+        </form>
+    </section>
+
+    <include ('./includes/footer.marko')> </include>
+</body>
+</html>
