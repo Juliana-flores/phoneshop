@@ -168,6 +168,9 @@ picture:hover > figcaption {
 .fav:hover, .cart:hover{
   color: white; 
 }
+.fa-heart.active {
+  color: red;
+}
 .mensagem2 p{
   color: rgb(0, 0, 0);
   font-family: monospace;
