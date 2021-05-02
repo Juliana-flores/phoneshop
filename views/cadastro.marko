@@ -11,6 +11,8 @@
 
     <section class='login-style'>
 
+    <div class="error">Oh não! Este e-mail já existe!.</div>
+
         <form action="/cadastro" method="post" class="formulario">
             <if(data.errors)>
                 <for(error in data.errors)>
