@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <include ('./includes/head.marko')> </include>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">	
+
+</head>
+
+<body>
+
+    <include ('./includes/header.marko')> </include>
+	
+    <section class="menu2">
+        <div class="mensagem">
+            <p id='corre'>O melhor lugar de fones é aqui! Tudo o que você precisa, você encontra!</p>
+        </div>
+    </section>
+
+    <section class="produtos" id="produtos">
+        <for (product in data.products)>
+             <section class='venda'>
+			    <picture>
+				    <img src="${product.image}" alt="Fone de ouvidos">
+				    <figcaption>
+					    <span>${product.description}</span>
+				    </figcaption>
+			    </picture>
+                <div class="descricao">
+                    <div class="mensagem1">
+                        <p>
+                            ${product.name}
+                        </p>
+                    </div>
+                    <div class="figura">
+                        <ul class='fav'>
+                            <li><i class="fa fa-heart "></i></li>
+                        </ul>
+                        <ul class='cart'>
+                            <li><i class="fa fa-shopping-cart "></i></li>
+                        </ul>   
+                    </div>
+                    <div class="mensagem2">
+                        <p>
+                            <br> ${product.price.value} <br>
+                            ${product.price.desc}
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </for>
+    </section>
+
+    
+	
+	<section class="newsletter">
+        <h2>Inscreva-se agora</h2>
+        <h3>e Receba as últimas novidades e promoções</h3>
+        <form>
+            <input type="email" name="Email" placeholder="Seu email">
+            <button>Cadastrar!</button>
+        </form>
+    </section>
+	
+    <include ('./includes/footer.marko')> </include>
+
+    <script src="/public/javascripts/index.js"></script>
+</body>
+</html>

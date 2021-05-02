@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.menu {
+  width: 100%;
+  height: 100px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 0px;
+}
+.logo img {
+  padding: 16px;
+  width: 50%;
+  height: 50%;
+}
+div.itens a:hover{
+   color: grey; 
+}
+
+.itens ul li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.itens ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu2 {
+  width: 100%;
+  background-image: url(/public/images/fundo.png);
+  height: 540px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 132px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mensagem {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.mensagem p {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Redressed";
+}
+#corre::after{
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+@keyframes pisca{
+  0%,100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
+
+.anchor{
+  padding-top:2%;
+  width:20px;
+  text-align: center;
+  display: block;
+}
+
+.anchor:hover {
+	width:40px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+@media (max-width: 710px) {
+  .itens ul li a span {
+    display: none;
+  }
+}
+
+.produtos{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+picture {
+    position: relative;
+}
+
+picture > figcaption {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #EEE;
+    padding: 10px 15px;
+    opacity: 0;
+    transition: opacity 300ms, left 300ms;
+}
+
+picture:hover > figcaption {
+    opacity: 1;
+    left: 15px;
+}
+
+.venda{
+  margin-bottom: 20px;
+}
+.venda img{
+  width: 350px;
+  height: 350px;
+  cursor: pointer;
+}
+
+.descricao{
+  cursor: pointer;
+  background-color: #003945;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px #01414e;
+  
+  
+
+}
+.mensagem1 p {
+  font-size: large;
+  font-family: monospace;
+  color: #fff;
+}
+.figura{
+  float: right;
+}
+.figura ul li{
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+}
+.fav:hover, .cart:hover{
+  color: white; 
+}
+.fa-heart.active {
+  color: red;
+}
+.mensagem2 p{
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+}
+
+.footer{
+  width: 90%;
+  float: left;
+  padding: 5% 5%;
+  text-align: center;
+  background: black;
+}
+.social-icons a{
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 3%;
+}
+.social-icons a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+.copyright{
+	margin-top:15px;
+  color: rgba(255, 255, 255, 0.7);
+	font-size: 20px;
+}
+.copyright a{
+    color: rgba(255, 255, 255, 0.7);
+	font-size: 20px;
+}
+
+.newsletter{
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: #003945;
+}
+.newsletter h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 2%;
+}
+.newsletter h3{
+    font-size: 2em;
+    color: #fff;
+    margin-top: 2%;
+}
+.newsletter form{
+  margin-top: 2%;
+}
+.newsletter input{
+	width:60%;
+	padding:1%;
+    background-color: #003945;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+}
+.newsletter button{
+	height:100%;
+    background-color: #fff;
+    color: #130400;
+    cursor: pointer;
+	padding:1%;
+	padding-left:5%;
+	padding-right:5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 7px;
+}
