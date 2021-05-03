@@ -11,8 +11,7 @@ passport.deserializeUser((id, done) => {
   })
 })
 
-const callback = (request, email, password, done) => {
-  console.log(email, password, done)
+const signUp = (request, email, password, done) => {
   User.findOne({ email }, (err, user) => {
     if (err) {
       return done(err)
@@ -36,13 +35,40 @@ const callback = (request, email, password, done) => {
   })
 }
 
-const strategy = new LocalStrategy(
+const signIn = (request, email, password, done) => {
+  User.findOne({ email }, (error, user) => {
+    if (error) {
+      return done(error)
+    }
+    if (!user) {
+      return done(null, false, { message: 'Usuário inválido' })
+    }
+
+    if (!user.decryptPassword(password)) {
+      return done(null, false, { message: 'Senha inválida' })
+    }
+
+    return done(null, user)
+  })
+}
+
+const signUpStrategy = new LocalStrategy(
   {
     usernameField: 'email',
     passwordField: 'password',
     passReqToCallback: true
   },
-  callback
+  signUp
 )
 
-passport.use('local.signup', strategy)
+const signInStrategy = new LocalStrategy(
+  {
+    usernameField: 'email',
+    passwordField: 'password',
+    passReqToCallback: true
+  },
+  signIn
+)
+
+passport.use('local.signup', signUpStrategy)
+passport.use('local.signin', signInStrategy)

@@ -11,13 +11,13 @@
 
     <section class='login-style'>
 
-    <div class="error">Oh não! Este e-mail já existe!.</div>
-
-        <form action="/cadastro" method="post" class="formulario">
+        <form action="/cadastro" id="signup-form" method="post" class="formulario">
             <if(data.errors)>
-                <for(error in data.errors)>
-                    ${error} <br/>
-                </for>
+                 <div class="error">
+                    <for(error in data.errors)>
+                        ${error}    
+                    </for>
+                </div>
             </if>
             <h1>
                 Login
@@ -55,5 +55,6 @@
     </section>
 
     <include ('./includes/footer.marko')> </include>
+    <script src='/public/javascripts/cadastro.js'></script>
 </body>
 </html>
