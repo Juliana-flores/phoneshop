@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-/* GET home page. */
+/* GET about page. */
 router.get('/about', (req, res, next) => {
   res.marko(require('../views/about.marko'))
 })

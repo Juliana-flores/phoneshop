@@ -42,8 +42,11 @@
                     </div>
                     <div class="mensagem2">
                         <p>
-                            <br> ${product.price.value} <br>
-                            ${product.price.desc}
+                            <br>
+                            <for(info in product.additionalInfo)>
+                                ${info}
+                                <br>
+                            </for>
                         </p>
                     </div>
                 </div>
