@@ -8,7 +8,11 @@
                 <li><a href="/"><i class="fa fa-shopping-cart "></i><span> Carrinho </span> </a></li>
                 <li><a href="/about"><i class="fa fa-info-circle "></i><span> Quem somos</span></a></li>
                 <li><a href="/contato"><i class="fa fa-phone"></i><span> Contato </span></a></li>
-                <li><a href="/login"><i class="fa fa-user "></i><span> Entrar </span></a></li>
+                <if(!out.global.login)>
+                    <li><a href="/login"><i class="fa fa-user "></i><span> Entrar </span></a></li>
+                </if> <else>
+                    <li><a href="/logout"><i class="fa fa-sign-out  "></i><span> Sair </span></a></li>
+                </else>
             </ul>
         </div>
     </div>

@@ -11,13 +11,13 @@
 
     <section class='login-style'>
 
-    <div class="error">Oh não! Este e-mail já existe!.</div>
-
-        <form action="/cadastro" method="post" class="formulario">
+        <form action="/cadastro" id="signup-form" method="post" class="formulario">
             <if(data.errors)>
-                <for(error in data.errors)>
-                    ${error} <br/>
-                </for>
+                 <div class="error">
+                    <for(error in data.errors)>
+                        ${error}    
+                    </for>
+                </div>
             </if>
             <h1>
                 Login
@@ -27,13 +27,13 @@
                     <label for="nome">
                         <span>Nome completo</span>
                     </label>
-                    <input type="text" id='name' name="nome" placeholder="Digite seu nome" required>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
                 </div>
                 <div class="inserir">
                     <label for="email">
                         <span>Email</span> 
                     </label>
-                    <input type="email" id='email' name="email" placeholder="Digite seu email" required>
+                    <input type="email" id="email" name="email"  class="form-control" placeholder="Digite seu email" required>
                 </div>
                 <div class="inserir">
                     <label for='cemail'>
@@ -45,7 +45,7 @@
                     <label for="senha">
                         <span>Crie sua Senha</span>
                     </label>
-                    <input type="password" id="password" name="senha" placeholder="Digite sua senha">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Digite sua senha">
                 </div>
                 <div class="inserir">
                      <button type="submit" value="sign up">Criar conta</button>
@@ -55,5 +55,6 @@
     </section>
 
     <include ('./includes/footer.marko')> </include>
+    <script src='/public/javascripts/cadastro.js'></script>
 </body>
 </html>

@@ -9,8 +9,10 @@ require('./data/database').getInstance()
 require('./config/passport')
 
 const express = require('express')
+
 const session = require('express-session')
 const cookie = require('cookie-parser')
+
 const passport = require('passport')
 const flash = require('connect-flash')
 
@@ -29,6 +31,14 @@ app.use(flash())
 
 app.use(passport.initialize())
 app.use(passport.session())
+
+/**
+ * Variável para validar nas views se o usuário está logado
+ */
+app.use((request, response, next) => {
+  response.locals.login = request.isAuthenticated()
+  next()
+})
 
 app.use('/public', express.static(path.join(__dirname, 'public')))
 app.use('/', require('./routes'))
