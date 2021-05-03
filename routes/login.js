@@ -2,6 +2,20 @@ const passport = require('passport')
 const express = require('express')
 const router = express.Router()
 
+const isLoggedIn = (request, response, next) => {
+  if (request.isAuthenticated()) {
+    return next()
+  }
+  response.redirect('/')
+}
+
+const isNotLoggedIn = (request, response, next) => {
+  if (!request.isAuthenticated()) {
+    return next()
+  }
+  response.redirect('/')
+}
+
 /* GET login page. */
 router.get('/login', (req, res, next) => {
   const errors = req.flash('error')
@@ -10,6 +24,7 @@ router.get('/login', (req, res, next) => {
 
 router.post(
   '/login',
+  isNotLoggedIn,
   passport.authenticate('local.signin', {
     successRedirect: '/',
     failureRedirect: '/login',
@@ -17,7 +32,7 @@ router.post(
   })
 )
 
-router.get('/logout', (request, response, next) => {
+router.get('/logout', isLoggedIn, (request, response, next) => {
   request.logout()
   response.redirect('/')
 })
