@@ -3,6 +3,9 @@ const Cart = require('../models/cart')
 const Product = require('../models/product')
 const router = express.Router()
 
+router.get('/', (req, res) => {
+  res.marko(require('../views/shop/shopping-cart.marko'))
+})
 router.get('/add-to-cart/:id', (req, res) => {
   const productId = req.params.id
   const oldCart = req.session.cart
