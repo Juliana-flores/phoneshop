@@ -36,7 +36,7 @@ app.use(passport.session())
  * Variável para validar nas views se o usuário está logado
  */
 app.use((request, response, next) => {
-  response.locals.login = request.isAuthenticated()
+  response.locals.login = request.isDale()
   next()
 })
 
