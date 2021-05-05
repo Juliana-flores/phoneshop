@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <include ('./includes/head.marko')> </include>
+    <link rel="stylesheet" href="/public/stylesheets/checkout.css">	
+</head>
+
+
+<body>    
+    <include ('./includes/header.marko')> </include>
+
+
+     <section class="cart">
+      <div class="row">
+        <div class="form">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span class="badge">2</span>
+              <strong>Title</strong>
+              <span class="label label-success">R$12</span>
+
+              <div class="btn-group">
+                <button class="btn btn-primary btn-xs dropdown-toggle" type="button">Ações <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Reduzir</a></li>
+                  <li><a href="#">Remover</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="forms">
+          <strong>Total: </strong>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="forms">
+          <button type="button" class="btn btn-success">Checkout</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="forms">
+          <h2>Sem itens no carrinho</h2>
+        </div>
+      </div>
+
+    </section>
+
+
+    <include ('./includes/footer.marko')> </include>
+</body>
+</html>
