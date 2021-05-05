@@ -15,5 +15,6 @@ router.use(require('./login'))
 router.use(require('./about'))
 router.use(require('./cadastro'))
 router.use(require('./contato'))
+router.use('/carrinho', require('./carrinho'))
 
 module.exports = router
