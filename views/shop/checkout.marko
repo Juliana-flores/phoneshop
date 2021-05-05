@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <include ('./includes/head.marko')> </include>
+    <link rel="stylesheet" href="/public/stylesheets/checkout.css">	
+</head>
+
+
+<body>    
+    <include ('./includes/header.marko')> </include>
+
+
+    <section class='checkout-style'>
+    <form class="formulario" id='checkout'>
+      <div class="titulo">
+        <h1>Checkout</h1>
+        <h4>Total: R$</h4>
+      </div>
+
+      <div class="card">
+        <div class="inserir">
+          <label for="name">
+            <span>Nome completo</span>
+          </label>
+          <input type="text" id='name' name="name" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="inserir">
+          <label for="address">
+            <span>Endereço</span>
+          </label>
+          <input type="text" id='address' name="address" placeholder="Digite seu endereço" required>
+        </div>
+
+        <div class="inserir">
+          <label for='card-name'>
+            <span>Nome do Titular</span>
+          </label>
+          <input type="text" id='card-name' name="card-name" placeholder="Digite o nome do titular" required>
+        </div>
+
+        <div class="inserir">
+          <label for="card-number">
+            <span>Número do cartão</span>
+          </label>
+          <input type="text" id="card-number" name="card-number" placeholder="Digite o número do cartão">
+        </div>
+
+        <div class="inserir">
+          <label for="card-expiry-month">
+            <span>Mês de expiração</span>
+          </label>
+          <input type="text" id="card-expiry-month" name="card-expiry-month" placeholder="Digite mês de expiração do cartão">
+        </div>
+
+        <div class="inserir">
+          <label for="card-expiry-year">
+            <span>Ano de expiração</span>
+          </label>
+          <input type="text" id="card-expiry-year" name="card-expiry-year" placeholder="Digite ano de expiração do cartão">
+        </div>
+
+        <div class="inserir">
+          <label for="card-cvc">
+            <span>CVC</span>
+          </label>
+          <input type="text" id="card-cvc" name="card-cvc" placeholder="Digite o CVC do cartão">
+        </div>
+
+        <div class="inserir">
+          <button type="submit" class="btn-success">Compre Agora</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+
+    <include ('./includes/footer.marko')> </include>
+</body>
+</html>
