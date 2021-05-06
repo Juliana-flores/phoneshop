@@ -78,6 +78,8 @@ div.itens a:hover {
   padding: 5% 5%;
   text-align: center;
   background: black;
+  position: absolute;
+  bottom: 0;
 }
 .social-icons a {
   font-size: 1.5em;
