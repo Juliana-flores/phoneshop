@@ -11,7 +11,6 @@ body {
   margin: auto;
 }
 header {
-  position: fixed;
   width: 100%;
   z-index: 10;
 }
@@ -49,75 +48,32 @@ div.itens a:hover {
     display: none;
   }
 }
-.checkout-style {
-  height: 650px;
+
+.cart {
+  height: 400px;
+  margin-top: 80px;
+  padding-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.formulario h1 {
-  text-align: center;
-  font-size: 24px;
-  padding-top: 100px;
-  padding-bottom: 20px;
-}
-
-.formulario h4 {
-  text-align: center;
-  font-size: 18px;
-  padding-top: 1px;
-  padding-bottom: 3px;
-}
-
-.formulario {
-  width: 400px;
-  margin: auto;
+.panel-body {
+  margin-bottom: 50px;
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
-.card {
-  padding: 5px;
-  margin-top: 5px;
-}
-label {
-  margin-bottom: 3px;
-}
-label span {
-  color: #003945;
-}
-.inserir {
-  margin-bottom: 5px;
-}
-.inserir > label {
-  width: 100%;
-  color: rgb(82, 81, 81);
-  display: block;
-}
-.inserir > input {
-  border-radius: 4px;
-  width: 100%;
-  height: 15px;
-  padding: 2px;
-  margin-bottom: 3px;
-}
-.inserir button {
-  width: 50%;
-  height: 40px;
-  padding: 1px;
-  color: white;
-  background-color: #003945;
-  border: 2px solid #003945;
-  border-radius: 8px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  margin-top: 6px;
+.col-xs-2 span {
+  color: black;
 }
 
-.inserir button:hover {
+.col-xs-3 button {
   background-color: #003945;
-  color: white;
+  border-color: #003945;
 }
+
 .footer {
-  width: 90%;
+  width: 100%;
   float: left;
   padding: 5% 5%;
   text-align: center;
