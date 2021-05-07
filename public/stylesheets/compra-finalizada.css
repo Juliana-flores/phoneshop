@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+header {
+  width: 100%;
+  z-index: 10;
+}
+.menu {
+  width: 100%;
+  height: 100px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 0px;
+}
+.logo img {
+  padding: 16px;
+  width: 50%;
+  height: 50%;
+}
+div.itens a:hover {
+  color: grey;
+}
+
+.itens ul li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.itens ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 710px) {
+  .itens ul li a span {
+    display: none;
+  }
+}
+.compra {
+  height: 400px;
+}
+
+.titulo {
+  width: 100%;
+  height: 50px;
+  margin-top: 80px;
+  padding-top: 20px;
+}
+
+.titulo h1,
+h2,
+h3 {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  color: #003945;
+}
+
+.titulo img {
+  width: 100px;
+  height: 100px;
+  margin-left: 630px;
+}
+
+.footer {
+  width: 100%;
+  float: left;
+  padding: 5% 5%;
+  text-align: center;
+  background: black;
+}
+.social-icons a {
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 3%;
+}
+.social-icons a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+.copyright {
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+.copyright a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
