@@ -53,9 +53,16 @@ div.itens a:hover {
 }
 
 .cart {
+<<<<<<< HEAD
   height: 40%;
   max-height: 40%;
   width: 100%;
+=======
+  height: 400px;
+  width: 100%;
+  margin-top: 80px;
+  padding-top: 20px;
+>>>>>>> 993863ab950452ea30d0a3eccb60b9808370399b
 }
 
 .panel-body {
@@ -71,6 +78,7 @@ div.itens a:hover {
 .col-xs-3 button {
   background-color: #003945;
   border-color: #003945;
+  border-radius: 8px;
 }
 
 .footer {
