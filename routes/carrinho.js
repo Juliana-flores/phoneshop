@@ -3,10 +3,20 @@ const Cart = require('../models/cart')
 const Product = require('../models/product')
 const router = express.Router()
 
-router.get('/', (req, res) => {
-  res.marko(require('../views/shop/shopping-cart.marko'))
+router.get('/carrinho', (req, res) => {
+  if (!req.session.cart) {
+    return res.marko(require('../views/shop/shopping-cart.marko'), {
+      products: null
+    })
+  }
+  const cart = new Cart(req.session.cart)
+  const products = cart.generateArray()
+  res.marko(require('../views/shop/shopping-cart.marko'), {
+    products,
+    totalPrice: cart.totalPrice
+  })
 })
-router.get('/add-to-cart/:id', (req, res) => {
+router.get('/carrinho/add-to-cart/:id', (req, res) => {
   const productId = req.params.id
   const oldCart = req.session.cart
   const cart = new Cart(oldCart)
