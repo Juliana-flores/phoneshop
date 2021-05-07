@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <include ('../includes/head.marko')> </include>
-    <link rel="stylesheet" href="/public/stylesheets/checkout.css">	
+  <include ('../includes/head.marko')> </include>
+  <link rel="stylesheet" href="/public/stylesheets/checkout.css">	
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
 
 
@@ -11,12 +16,17 @@
 
 
     <section class='checkout-style'>
-    <form class="formulario" id='checkout'>
+
+    <form class="formulario" action="/checkout" method="post" id="checkout">
       <div class="titulo">
         <h1>Checkout</h1>
-        <h4>Total: R$</h4>
+        <h4>Total: R$ ${data.total}</h4>
       </div>
-
+      <if(data.error)>
+        <div id='charge-error' class='alert alert-danger'>
+            ${data.error}
+        </div>
+      </if>
       <div class="card">
         <div class="inserir">
           <label for="name">
@@ -26,45 +36,38 @@
         </div>
 
         <div class="inserir">
-          <label for="address">
+          <label for="address_line1">
             <span>Endereço</span>
           </label>
-          <input type="text" id='address' name="address" placeholder="Digite seu endereço" required>
+          <input type="text" id='address_line1' name="address_line1" placeholder="Digite seu endereço" required>
         </div>
 
         <div class="inserir">
-          <label for='card-name'>
-            <span>Nome do Titular</span>
-          </label>
-          <input type="text" id='card-name' name="card-name" placeholder="Digite o nome do titular" required>
-        </div>
-
-        <div class="inserir">
-          <label for="card-number">
+          <label for="number">
             <span>Número do cartão</span>
           </label>
-          <input type="text" id="card-number" name="card-number" placeholder="Digite o número do cartão">
+          <input type="text" id="number" name="number" placeholder="Digite o número do cartão">
         </div>
 
         <div class="inserir">
-          <label for="card-expiry-month">
+          <label for="exp_month">
             <span>Mês de expiração</span>
           </label>
-          <input type="text" id="card-expiry-month" name="card-expiry-month" placeholder="Digite mês de expiração do cartão">
+          <input type="text" id="exp_month" name="exp_month" placeholder="Digite mês de expiração do cartão">
         </div>
 
         <div class="inserir">
-          <label for="card-expiry-year">
+          <label for="exp_year">
             <span>Ano de expiração</span>
           </label>
-          <input type="text" id="card-expiry-year" name="card-expiry-year" placeholder="Digite ano de expiração do cartão">
+          <input type="text" id="exp_year" name="exp_year" placeholder="Digite ano de expiração do cartão">
         </div>
 
         <div class="inserir">
-          <label for="card-cvc">
+          <label for="cvc">
             <span>CVC</span>
           </label>
-          <input type="text" id="card-cvc" name="card-cvc" placeholder="Digite o CVC do cartão">
+          <input type="text" id="cvc" name="cvc" placeholder="Digite o CVC do cartão">
         </div>
 
         <div class="inserir">
@@ -75,6 +78,9 @@
   </section>
 
 
-    <include ('./includes/footer.marko')> </include>
+    <include ('../includes/footer.marko')> </include>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/public/javascripts/checkout.js"></script>
 </body>
 </html>
