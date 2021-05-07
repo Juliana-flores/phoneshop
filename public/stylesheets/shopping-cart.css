@@ -53,16 +53,10 @@ div.itens a:hover {
 }
 
 .cart {
-<<<<<<< HEAD
-  height: 40%;
-  max-height: 40%;
-  width: 100%;
-=======
   height: 400px;
   width: 100%;
   margin-top: 80px;
   padding-top: 20px;
->>>>>>> 993863ab950452ea30d0a3eccb60b9808370399b
 }
 
 .panel-body {
@@ -83,6 +77,7 @@ div.itens a:hover {
 
 .footer {
   width: 100%;
+  height: 20px;
   float: left;
   padding: 5% 5%;
   text-align: center;
