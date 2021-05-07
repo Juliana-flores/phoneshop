@@ -74,35 +74,3 @@ div.itens a:hover {
   border-color: #003945;
   border-radius: 8px;
 }
-
-.footer {
-  width: 100%;
-  height: 20px;
-  float: left;
-  padding: 5% 5%;
-  text-align: center;
-  background: black;
-  position: absolute;
-  bottom: 0;
-}
-.social-icons a {
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.7);
-  margin-right: 3%;
-}
-.social-icons a:hover {
-  color: rgb(255, 255, 255);
-}
-
-.social-icons a:last-child {
-  margin-right: 0;
-}
-.copyright {
-  margin-top: 15px;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 20px;
-}
-.copyright a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 20px;
-}
