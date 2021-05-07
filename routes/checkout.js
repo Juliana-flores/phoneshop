@@ -43,6 +43,7 @@ router.post('/checkout', async (req, res, next) => {
       error: 'Cartão inválido.'
     })
   }
+  return res.marko(require('../views/shop/compra-finalizada.marko'))
 })
 
 module.exports = router
