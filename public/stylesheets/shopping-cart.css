@@ -74,3 +74,8 @@ div.itens a:hover {
   border-color: #003945;
   border-radius: 8px;
 }
+
+.col-xs-3 button:hover {
+  background-color: #003945;
+  color: white;
+}
