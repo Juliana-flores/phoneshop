@@ -6,7 +6,7 @@ class CardService {
     this.service = stripe(process.env.stripe_key)
   }
 
-  async isValid (id, card) {
+  async isValid (card) {
     try {
       return await this.service.tokens.create({ card })
     } catch (error) {
