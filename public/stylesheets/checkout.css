@@ -63,7 +63,7 @@ div.itens a:hover {
 .formulario h4 {
   text-align: center;
   font-size: 18px;
-  padding-top: 1px;
+  padding-top: 3px;
   padding-bottom: 3px;
 }
 
@@ -79,7 +79,7 @@ div.itens a:hover {
   margin-top: 5px;
 }
 label {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 label span {
   color: #003945;
@@ -96,13 +96,13 @@ label span {
   border-radius: 4px;
   width: 100%;
   height: 15px;
-  padding: 2px;
-  margin-bottom: 3px;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 .inserir button {
   width: 50%;
   height: 40px;
-  padding: 1px;
+  padding: 2px;
   color: white;
   background-color: #003945;
   border: 2px solid #003945;
@@ -115,32 +115,4 @@ label span {
 .inserir button:hover {
   background-color: #003945;
   color: white;
-}
-.footer {
-  width: 90%;
-  float: left;
-  padding: 5% 5%;
-  text-align: center;
-  background: black;
-}
-.social-icons a {
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.7);
-  margin-right: 3%;
-}
-.social-icons a:hover {
-  color: rgb(255, 255, 255);
-}
-
-.social-icons a:last-child {
-  margin-right: 0;
-}
-.copyright {
-  margin-top: 15px;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 20px;
-}
-.copyright a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 20px;
 }
