@@ -31,12 +31,12 @@
                     <input type="text" class="form-control input-sm" value="${product.qty}" disabled>
                   </div>
                   <div class="col-xs-2">
-                    <button type="button" class="btn btn-link btn-xs">
+                    <a href='/carrinho/remove/${product.item._id}' class="btn btn-link btn-xs">
                       <span class="glyphicon glyphicon-minus"> </span>
-                    </button>
-                    <button type="button" class="btn btn-link btn-xs">
+                    </a>
+                    <a href='/carrinho/add/${product.item._id}' class="btn btn-link btn-xs">
                       <span class="glyphicon glyphicon-plus"> </span>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
