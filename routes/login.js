@@ -2,6 +2,9 @@ const passport = require('passport')
 const express = require('express')
 const router = express.Router()
 
+const LoginController = require('../controller/loginController')
+const controller = new LoginController()
+
 const isLoggedIn = (request, response, next) => {
   if (request.isAuthenticated()) {
     return next()
@@ -17,10 +20,7 @@ const isNotLoggedIn = (request, response, next) => {
 }
 
 /* GET login page. */
-router.get('/login', (req, res, next) => {
-  const errors = req.flash('error')
-  res.marko(require('../views/login.marko'), { errors })
-})
+router.get('/login', controller.get.bind(controller))
 
 router.post(
   '/login',
@@ -32,9 +32,6 @@ router.post(
   })
 )
 
-router.get('/logout', isLoggedIn, (request, response, next) => {
-  request.logout()
-  response.redirect('/')
-})
+router.get('/logout', isLoggedIn, controller.logout.bind(controller))
 
 module.exports = router

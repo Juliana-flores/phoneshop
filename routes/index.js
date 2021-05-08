@@ -1,13 +1,14 @@
 const express = require('express')
 const router = express.Router()
+
+/** @type {import('mongoose').Model} */
 const Product = require('../models/product')
 
 /* GET home page. */
-router.get('/', (req, res, next) => {
-  Product.find((error, products) => {
-    res.marko(require('../views/index.marko'), {
-      products
-    })
+router.get('/', async (req, res, next) => {
+  const products = await Product.find()
+  res.marko(require('../views/index.marko'), {
+    products
   })
 })
 

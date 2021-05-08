@@ -2,11 +2,11 @@ const passport = require('passport')
 const express = require('express')
 const router = express.Router()
 
+const CadastroController = require('../controller/cadastroController')
+const controller = new CadastroController()
+
 /* GET cadastro page. */
-router.get('/cadastro', (req, res, next) => {
-  const errors = req.flash('error')
-  res.marko(require('../views/cadastro.marko'), { errors })
-})
+router.get('/cadastro', controller.get.bind(controller))
 
 router.post(
   '/cadastro',

@@ -79,3 +79,7 @@ div.itens a:hover {
   background-color: #003945;
   color: white;
 }
+
+input:disabled {
+  pointer-events: none;
+}
