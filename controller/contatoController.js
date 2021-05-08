@@ -15,7 +15,7 @@ class ContatoController {
    * @param {Response} response
    */
   get (request, response) {
-    request.marko(require('../views/contato.marko'))
+    response.marko(require('../views/contato.marko'))
   }
 
   /**
