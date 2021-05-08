@@ -114,5 +114,6 @@ label span {
 
 .inserir button:hover {
   background-color: #003945;
+  border: 2px solid #003945;
   color: white;
 }
