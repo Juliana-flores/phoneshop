@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const app = require('../app')
+const appModule = require('../app')
 const http = require('http')
 
 /**
@@ -65,13 +65,13 @@ const onListening = () => {
  */
 
 const port = normalizePort(process.env.PORT || '3000')
-app.set('port', port)
+appModule.set('port', port)
 
 /**
  * Create HTTP server.
  */
 
-const server = http.createServer(app)
+const server = http.createServer(appModule)
 
 /**
  * Listen on provided port, on all network interfaces.

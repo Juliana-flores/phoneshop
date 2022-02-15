@@ -10,6 +10,9 @@ require('./config/passport')
 
 const express = require('express')
 
+const app = express()
+
+
 const session = require('express-session')
 const cookie = require('cookie-parser')
 
@@ -17,7 +20,6 @@ const passport = require('passport')
 const flash = require('connect-flash')
 
 const path = require('path')
-const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
